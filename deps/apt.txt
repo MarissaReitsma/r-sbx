@@ -1,0 +1,30 @@
+# System libraries installed before R. One per line; # starts a comment.
+#
+# These are pre-filled rather than left to pak's system-requirements lookup,
+# which may not have a mapping for a non-LTS Ubuntu. If a package fails to
+# compile complaining about a missing header, add it here and rebuild — that
+# invalidates the R layer, so it costs a full rebuild. Adding it in a running
+# sandbox with `sudo apt-get install` first is the faster way to find out which
+# one you need.
+
+# curl / httr / openssl
+libcurl4-openssl-dev
+libssl-dev
+
+# xml2, and rvest through it
+libxml2-dev
+
+# systemfonts / textshaping / ragg — the tidyverse graphics stack
+libfontconfig1-dev
+libfreetype6-dev
+libharfbuzz-dev
+libfribidi-dev
+
+# ragg / png / jpeg / tiff image devices
+libpng-dev
+libjpeg-dev
+libtiff-dev
+
+# stringi and friends
+libicu-dev
+zlib1g-dev

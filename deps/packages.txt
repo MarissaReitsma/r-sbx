@@ -1,0 +1,19 @@
+# Packages always present in the template. One per line; # starts a comment.
+# Used when building with --build-arg MODE=packages.
+#
+# CRAN names are pinned by the SNAPSHOT date in the Dockerfile.
+# GitHub entries are owner/repo, optionally owner/repo@ref where ref is a tag,
+# branch, or commit SHA.
+
+# ---- CRAN -------------------------------------------------------------------
+tidyverse
+data.table
+
+# ---- GitHub (DARTH) ---------------------------------------------------------
+# Unpinned, so these resolve to HEAD of the default branch at build time. The
+# commit that was actually installed is recorded in /opt/r-sbx-manifest.txt —
+# check there before citing a result. Append @<sha> to freeze one.
+DARTH-git/dampack
+DARTH-git/darthtools
+janitor
+skimr

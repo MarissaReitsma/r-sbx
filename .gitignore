@@ -1,0 +1,10 @@
+# Transient copy for MODE=lockfile builds — the real one lives in the project
+deps/renv.lock
+
+# Image handoff tarballs from `docker image save` (several GB each)
+*.tar
+
+# Build logs
+*.log
+
+.DS_Store
