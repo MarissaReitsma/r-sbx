@@ -2,6 +2,8 @@
 
 Run Claude Code in a sbx microVM with R (v 4.6.1). There are two options for packages, one accepts a package list as a .txt and the other accepts a project `renv.lock`
 
+*AI Disclosure: This workflow was developed iteratively with Claude Opus 5.*
+
 ## One-time setup
 
 ```bash
